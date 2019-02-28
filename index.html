@@ -1,0 +1,73 @@
+  <!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Activity-1 ch-1</title>
+	  <link href='rootassets/common.css' rel='stylesheet' type='text/css' />	 
+ 	  <link href='rootassets/mcqTicks.css' rel='stylesheet' type='text/css' />
+      <link href='css/style.css' rel='stylesheet' type='text/css' /> 
+	  <link href="fonts/fonts.css" rel="stylesheet" type='text/css' />	  
+	  	  
+      <script type="text/javascript" src="rootassets/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="rootassets/UI_files_ga.js"></script>
+      <script type="text/javascript" src="rootassets/UI_files_jquery-ui.min.js"></script>
+      <script type="text/javascript" src="rootassets/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+   </head>
+   <body style="display:none;">
+      <div id='main' class="noselect">
+         <div id="headerL1">
+            <!-- <div id="unitT">Activity-1 ch-6</div>	 -->	
+              		
+         </div> <!-- / div header -->
+		 
+     <div id='container'>
+	   
+	   <div id="dis"></div>
+	   <iframe src="audio/dragaudio.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>  
+			 <audio id="audio" allow="autoplay" src="rootassets/well-done.mp3" autostart="false" ></audio>
+             <audio id="audio1" allow="autoplay" src="rootassets/try-again.mp3" autostart="false" ></audio>
+		<div id='textContent'>	
+		   <div id="itext">Drag and drop the things on their right places to make the room clean and tidy. </div>
+		   <div id="img_box">
+		      <img id="img01" src="img/a2.png"/>
+		   </div>
+ 
+                    <img id="imextra" src="img/imgt.png"/>
+					
+						<div class="dr1"><div class="droppable dropp" id="drops0" num="0" data-ids="-1"></div></div>
+						<div class="dr2"><div class="droppable dropp" id="drops1" num="1" data-ids="-1"></div></div>
+						<div class="dr3" ><div class="droppable dropp" id="drops2" num="2" data-ids="-1"></div></div>
+						<div class="dr4"><div class="droppable dropp" id="drops3" num="3" data-ids="-1"></div></div>
+						<div class="dr5"><div class="droppable dropp" id="drops4" num="4" data-ids="-1"></div></div>
+						
+	   
+			 
+		    <div id="dragBox" class="droppable" data-ids="-1">
+				<div id="drags0" data-id="0" dro="" drag="false" class="draggable hove drr"><span class=""><img class="wdt1" src="img/img1.png"/> <img id="wrong0" class="r_w w" src="rootassets/wrng.png" /><img id="right0" class="r_w r" src="rootassets/chk.png" /></span></div>
+				<div id="drags1" data-id="1" dro="" drag="false" class="draggable hove drr"><span class=""><img class="wdt2" src="img/img2.png"/> <img id="wrong1" class="r_w w" src="rootassets/wrng.png" /><img id="right1" class="r_w r" src="rootassets/chk.png" /></span></div>
+				<div id="drags2" data-id="2" dro="" drag="false" class="draggable hove drr"><span class=""><img class="wdt3" src="img/img3.png"/> <img id="wrong2" class="r_w w" src="rootassets/wrng.png" /><img id="right2" class="r_w r" src="rootassets/chk.png" /></span></div>
+				<div id="drags3" data-id="3" dro="" drag="false" class="draggable hove drr"><span class=""><img class="wdt4" src="img/img4.png"/> <img id="wrong3" class="r_w w" src="rootassets/wrng.png" /><img id="right3" class="r_w r" src="rootassets/chk.png" /></span></div>
+				<div id="drags4" data-id="4" dro="" drag="false" class="draggable hove drr"><span class=""><img class="wdt5" src="img/img5.png"/> <img id="wrong4" class="r_w w" src="rootassets/wrng.png" /><img id="right4" class="r_w r" src="rootassets/chk.png" /></span></div>
+				
+			
+		   </div>
+		   
+		   
+	   </div><!-- / div textContent -->	   
+	</div><!-- / div container -->
+	
+          <div id="footer">
+            <div id="nav">
+               <div id="score"><img src="rootassets/Welldone.gif" /></div> 		   
+               <button id="check_ans" class="btn_d" onclick="app.CheckFun();"><span>SUBMIT</span></button>
+               <button id="see_ans" class="btn_d" onclick="app.SeeFun();"><span>SOLUTION</span></button>
+               <button id="reset" class="btn_d" onclick="app.ResetFun();"><span>RESET</span></button>			   
+            </div> 			
+         </div>	<!-- / div footer -->		 
+      </div><!-- / div main -->
+	  
+   </body>
+</html>
